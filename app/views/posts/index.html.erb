@@ -1,0 +1,27 @@
+<p id="notice"><%= notice %></p>
+<div class="container">
+    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+    <div class="jumbotron">
+      <h1>Blog About Your Learning!</h1>
+      <p>Here's some great site's to try out!</p>
+      <p><%= link_to "code.org", "https://code.org/" %></p>
+              <p><%= link_to "codecademy", "https://www.codecademy.com/" %></p>
+              <p><%= link_to "Ruby Warrior", "https://www.bloc.io/ruby-warrior#/" %></p>
+              <p><%= link_to "Code Combat", "https://codecombat.com/play/dungeon" %></p>
+    </div>
+
+      <% @posts.each do |post| %>
+        <div class="post-preview">
+          <h3><%= link_to post.title, post %></h3>
+          <p><%= post.body.truncate(50) %></p>
+        </div>
+      <% end %>
+
+      <%= link_to 'New Post', new_post_path %>
+    </div>
+</div>
+
+
+<br>
+
+

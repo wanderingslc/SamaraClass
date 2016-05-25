@@ -1,15 +1,15 @@
 <!-- Page Header -->
 <!-- Set your background image for this header on the line below. -->
-<header class="intro-header" style="background-image: url('http://ironsummitmedia.github.io/startbootstrap-clean-blog/img/home-bg.jpg')">
+<header class="intro-header" >
     <div class="container">
         <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+            <!-- <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                 <div class="site-heading">
                     <h1>Clean Blog</h1>
                     <hr class="small">
                     <span class="subheading">A Clean Blog Theme by Start Bootstrap</span>
                 </div>
-            </div>
+            </div> -->
         </div>
     </div>
 </header>
@@ -17,6 +17,13 @@
 <!-- Main Content -->
 <div class="container">
     <div class="row">
+        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+            <h1>Programming Resources</h1>
+            <p><%= link_to "code.org", "https://code.org/" %></p>
+            <p><%= link_to "codecademy", "https://www.codecademy.com/" %></p>
+            <p><%= link_to "Ruby Warrior", "https://www.bloc.io/ruby-warrior#/" %></p>
+            <p><%= link_to "Code Combat", "https://codecombat.com/play/dungeon" %></p>
+        </div>
         <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
             <div class="post-preview">
                 <%= link_to page_path('post') do %>
@@ -57,7 +64,7 @@
                         Failure is not an option
                     </h2>
                     <h3 class="post-subtitle">
-                        Many say exploration is part of our destiny, but it’s actually our duty to future generations.
+                        Many say exploration is part of our destiny, but it's actually our duty to future generations.
                     </h3>
                 <% end %>
                 <p class="post-meta">Posted by <a href="#">Start Bootstrap</a> on July 8, 2014</p>
